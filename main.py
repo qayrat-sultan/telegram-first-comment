@@ -23,7 +23,7 @@ client.start()
 async def main(event):
     post = event.original_update.message
     username = event.chat.username
-    message_list = [i['text'] for i in colltexts.find({})]
+    message_list = [i['message'] for i in colltexts.find({})]
     x = random.choice(message_list)
     try:
         await client.send_message(entity=post.peer_id, message=x, comment_to=post)

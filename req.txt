@@ -1,0 +1,8 @@
+dnspython==2.2.1
+motor==3.0.0
+pyaes==1.6.1
+pyasn1==0.4.8
+pymongo==4.1.1
+python-dotenv==0.20.0
+rsa==4.8
+Telethon==1.24.0

@@ -105,12 +105,12 @@ async def delete_channel(event):
 
 @client.on(events.NewMessage(outgoing=True, pattern='!help'))
 async def help_message(event):
-    return await event.respond('!add_text *This text* — adding new text\n'
+    return await event.respond('!add_text **This text** — adding new text\n'
                                '!show_texts — showing texts\n'
-                               '!del_text *message_id* — deleting text by id\n'
-                               '!add_channel *channel_link* — adding new channel\n'
+                               '!del_text **message_id** — deleting text by id\n'
+                               '!add_channel **channel_link** — adding new channel\n'
                                '!show_channels — showing channels\n'
-                               '!del_channel *channel_username* — deleting channel from list')
+                               '!del_channel **channel_username** — deleting channel from list')
 
 
 client.run_until_disconnected()
